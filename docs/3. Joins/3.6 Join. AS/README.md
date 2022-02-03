@@ -3,11 +3,13 @@
 Оператор SQL `AS` используется для именования результирующих столбцов при выборке элементов.
 
 Оператор SQL `AS` имеет следующий синтаксис:
+
 ```sql
 SELECT column_name AS new_column_name FROM table_name
 ```
 
-Примеры: 
+Примеры:
+
 ```sql
 SELECT COUNT(*) AS employees_count
 FROM employees

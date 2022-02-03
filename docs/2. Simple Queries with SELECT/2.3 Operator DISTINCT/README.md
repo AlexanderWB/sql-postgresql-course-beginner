@@ -5,12 +5,14 @@
 Оператор SQL `DISTINCT` нашел широкое применение в операторе SQL SELECT, для выборки уникальных значений. Так же используется в агрегатных функциях.
 
 Оператор SQL DISTINCT имеет следующий синтаксис:
+
 ```postgresql
 SELECT DISTINCT city
 FROM employees
 ```
 
 Можно использовать не только одну колонку (будет смотреть по сочетанию колонок)
+
 ```postgresql
 SELECT DISTINCT city, country
 FROM employees

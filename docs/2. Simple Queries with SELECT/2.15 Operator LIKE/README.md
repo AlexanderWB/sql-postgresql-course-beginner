@@ -8,7 +8,8 @@
 expression [ NOT ] LIKE pattern
 ```
 
-где: 
+где:
+
 - `expression` — любое символьное выражение
 - `pattern` — шаблон, по которому будет происходить проверка выражения expression. Шаблон может включать в себя следующие спец. символы:
 
@@ -30,8 +31,8 @@ OR column_name LIKE '_oh_' -- строки, где 2, 3 символы - oh, а 
 SELECT last_name, first_name
 FROM employees
 WHERE (
-	last_name LIKE 'Buch%'
-	AND first_name LIKE 'Stev%'
+ last_name LIKE 'Buch%'
+ AND first_name LIKE 'Stev%'
 )
 ```
 

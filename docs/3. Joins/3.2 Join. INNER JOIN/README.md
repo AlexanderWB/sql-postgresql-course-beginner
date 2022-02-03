@@ -1,7 +1,7 @@
 # Соединение INNER JOIN
 
-Оператор SQL `INNER JOIN` формирует таблицу из записей двух или нескольких таблиц. 
-Каждая строка из первой (левой) таблицы, сопоставляется с каждой строкой из второй (правой) таблицы, после чего происходит проверка условия. 
+Оператор SQL `INNER JOIN` формирует таблицу из записей двух или нескольких таблиц.
+Каждая строка из первой (левой) таблицы, сопоставляется с каждой строкой из второй (правой) таблицы, после чего происходит проверка условия.
 
 Если условие истинно, то строки попадают в результирующую таблицу. В результирующей таблице строки формируются конкатенацией строк первой и второй таблиц.
 
@@ -19,6 +19,7 @@ ON condition
 ![SQL INNER JOIN пример](./img1.png)
 
 Объединяем таблицы `products` и `suppliers`
+
 ```postgresql
 SELECT product_name, suppliers.company_name, units_in_stock
 FROM products
@@ -58,10 +59,9 @@ INNER JOIN order_details ON orders.order_id = order_details.order_id
 INNER JOIN products ON order_details.product_id = products.product_id
 ```
 
-
 ```postgresql
 SELECT contact_name, company_name, phone, first_name, last_name, title
-		order_name, product_name, ship_country, products.unit_price, quantity, discount
+  order_name, product_name, ship_country, products.unit_price, quantity, discount
 FROM orders
 JOIN order_details ON orders.order_id = order_details.order_id
 JOIN products ON order_details.product_id = products.product_id

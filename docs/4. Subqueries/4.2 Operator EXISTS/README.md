@@ -16,6 +16,7 @@ WHERE EXISTS (
 ```
 
 Какие продукты не продавались, в период 1995-02-01 - 1995-02-15
+
 ```sql
 SELECT company_name, contact_name
 FROM customers

@@ -11,6 +11,7 @@
 ![SQL RIGHT JOIN пример](./img2.png)
 
 Заказчики без единого заказа
+
 ```postgresql
 SELECT company_name, order_id
 FROM customers
@@ -19,6 +20,7 @@ WHERE order_id IS NULL
 ```
 
 Найти работников, на которых нет никаких заказов
+
 ```postgresql
 SELECT last_name, order_id
 FROM employees

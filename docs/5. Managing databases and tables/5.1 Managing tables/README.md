@@ -33,6 +33,7 @@ CREATE TABLE cathedra
 ```
 
 Добавим новые столбцы таблицам
+
 ```sql
 ALTER TABLE student
 ADD COLUMN middle_name varchar;
@@ -45,18 +46,21 @@ ADD COLUMN enrolled date;
 ```
 
 Удаляем столбец
+
 ```sql
 ALTER TABLE student
 DROP COLUMN middle_name;
 ```
 
 Переименуем таблицу
+
 ```sql
 ALTER TABLE cathedra
 RENAME TO chair;
 ```
 
 Переименуем колонки таблицы
+
 ```sql
 ALTER TABLE chair
 RENAME cathedra_id TO chair_id;
@@ -66,6 +70,7 @@ RENAME cathedra_name TO chair_name;
 ```
 
 Изменим тип колонок таблицы
+
 ```sql
 ALTER TABLE student
 ALTER COLUMN first_name SET DATA TYPE varchar(64);
@@ -78,6 +83,7 @@ ALTER COLUMN phone SET DATA TYPE varchar(30);
 ```
 
 Создадим новую таблицу
+
 ```sql
 CREATE TABLE faculty
 (
@@ -93,12 +99,14 @@ VALUES
 ```
 
 Очищаем таблицу (удаляем все данные внутри таблицы)
+
 ```sql
 TRUNCATE TABLE faculty;
 TRUNCATE TABLE faculty RESTART IDENTITY; -- сбросит автоинкременты
 ```
 
 Удалим таблицу
+
 ```sql
 DROP TABLE faculty;
 ```

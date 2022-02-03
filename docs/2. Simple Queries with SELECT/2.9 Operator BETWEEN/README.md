@@ -1,6 +1,6 @@
 # Оператор BETWEEN
 
-Оператор SQL `BETWEEN` задает диапазон (включая начальное и конечное значения диапазона), 
+Оператор SQL `BETWEEN` задает диапазон (включая начальное и конечное значения диапазона),
 в котором будет осуществляться проверка условия.
 Оператор SQL `BETWEEN` имеет следующий синтаксис:
 
@@ -13,6 +13,7 @@ test_expression [NOT] BETWEEN begin_expression AND end_expression
 - `end_expression` — конечное значение диапазона;
 
 Пример
+
 ```postgresql
 SELECT *
 FROM Universities
@@ -32,6 +33,7 @@ WHERE freight >= 20 AND freight <= 40;
 ```
 
 Пример с использованием `BETWEEN` (эквивалент кода выше)
+
 ```postgresql
 SELECT *
 FROM orders
@@ -39,6 +41,7 @@ WHERE freight BETWEEN 20 AND 40
 ```
 
 Пример с использованием даты
+
 ```postgresql
 SELECT *
 FROM orders

@@ -3,6 +3,7 @@
 Оператор SQL `IN` позволяет определить, совпадает ли значение объекта со значением в списке.
 
 Оператор SQL `IN` имеет следующий синтаксис:
+
 ```postgresql
 -- 1
 SELECT *
@@ -18,6 +19,7 @@ WHERE Location IN ('Mexico', 'Germany', 'USA', 'Canada')
 ```
 
 Аналогичен:
+
 ```postgresql
 -- 1
 SELECT *
@@ -42,6 +44,7 @@ WHERE category_id IN (1, 3, 5, 7)
 ```
 
 Используя `NOT`
+
 ```postgresql
 SELECT *
 FROM customers

@@ -1,6 +1,7 @@
 # Типы данных в PostgreSQL
 
 ## Основные типы данных
+
 |                  | Name                          | Bytes    | Description                          | Range                          |
 |------------------|-------------------------------|----------|--------------------------------------|--------------------------------|
 | Integral Numbers | smallint                      | 2        | small-range integer                  | 2^16                           |
@@ -23,6 +24,7 @@
 |                  | timestamptz                   | 8        | stores a timestamp + timezone        | 4713 B.C. -> 294.276 AD + tz   |
 
 ## Другие типы данных
+
 - Arrays
 - JSON
 - XML

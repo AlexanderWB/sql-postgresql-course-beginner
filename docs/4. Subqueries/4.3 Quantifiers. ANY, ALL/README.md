@@ -9,6 +9,7 @@
 Выбрать все уникальные компании, которые делали заказы на более чем 40 товаров
 
 Используя `INNER JOIN`:
+
 ```sql
 SELECT DISTINCT company_name
 FROM customers
@@ -18,6 +19,7 @@ WHERE quantity > 40
 ```
 
 Используя подзапрос:
+
 ```sql
 SELECT DISTINCT company_name
 FROM customers
@@ -30,6 +32,7 @@ WHERE customer_id = ANY(
 ```
 
 Выбрать продукты, количество которых больше среднего по заказу
+
 ```sql
 SELECT DISTINCT product_name, quantity
 FROM products
@@ -42,6 +45,7 @@ ORDER BY quantity DESC
 ```
 
 Выбрать все продукты, количество которых больше среднего значения из групп полученных группированием по product_id
+
 ```sql
 SELECT DISTINCT product_name, quantity
 FROM products

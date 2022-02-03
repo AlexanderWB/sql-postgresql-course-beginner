@@ -1,7 +1,7 @@
 # Практический курс для новичков по SQL и PostgreSQL
 
 - Автор: Илья Фофанов
-- Ссылка на Udemy: https://www.udemy.com/course/bestpostgres/
+- Ссылка на Udemy: <https://www.udemy.com/course/bestpostgres/>
 - Дополнительные материалы, использованные при создании конспекта:
   - [2sql.ru](http://2sql.ru/)
 
